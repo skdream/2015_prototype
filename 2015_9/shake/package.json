@@ -1,0 +1,8 @@
+{
+	"name": "local_server", 
+	"description": "local server", 
+	"version": "0.0.1",
+	"dependencies": {
+	    "express": "^4.12.3"
+	 }
+}
