@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html style="margin:0 auto">
+<head>
+    <title>Fastclick Research</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<style>
+    
+    #touchBlock {
+        width: 100px;
+        height: 100px;
+        background: #ccc; 
+        margin-bottom: 20px;
+    }
+
+    #clickBlock {
+        width: 100px;
+        height: 100px;
+        background: #aaa; 
+        margin-bottom: 20px;
+    }
+    
+    #wrapper {
+        width: 200px;
+        height: 200px;
+        background: #ccc; 
+    }
+
+    #inner {
+        width: 100px;
+        height: 100px;
+        background: #aaa; 
+    }
+</style>
+<body>
+    <div id="touchBlock">Touch</div>
+    <div id="clickBlock">Click</div>
+
+    <div id="wrapper">
+        Touch
+        <div id="inner">Click</div>
+    </div>
+</body>
+</html>

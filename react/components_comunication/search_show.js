@@ -48,7 +48,6 @@ var Wrapper = React.createClass({
 		return (
 			<div>
 				Wrapper
-
 				<SearchCmp onSubmit={this.handleSubmit} />
 				<ShowCmp   searchValue={this.state.searchValue} />
 			</div>

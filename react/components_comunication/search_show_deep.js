@@ -11,7 +11,7 @@ var SearchCmp = React.createClass({
 		return (
 			<div> 
 				<input id="txt1" />
-				<input type="button" value="submit" id="btn1" onClick={this.handleClick} />
+				<input type="button" onClick={this.handleClick} />
 			</div>
 		);
 	}
