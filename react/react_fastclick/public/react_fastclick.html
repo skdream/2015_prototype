@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html style="margin:0 auto">
+<head>
+    <title>React FastClick</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="./build/react.js"></script>
+    <script src="./build/JSXTransformer.js"></script>
+    <script type="text/jsx" src="react_fastclick.js"></script>
+    <script type="text/jsx" src="react_fastclick_plugin.js"></script>
+</head>
+<body>
+    <script type="text/jsx">
+
+        var startTs, endTs; 
+
+        var App = React.createClass({
+          onClick: function (event) {
+            console.log('on click'); 
+            endTs = + new Date(); 
+
+            alert('click time: ' + (endTs - startTs) + 'ms'); 
+          },
+          onTouchStart: function() {
+            console.log('on touch start'); 
+
+          }, 
+          onTouchEnd: function() {
+            startTs = + new Date(); 
+          }, 
+          render: function() {
+            return (
+              <p onClick={this.onClick} onTouchStart={this.onTouchStart} onTouchEnd={this.onTouchEnd}>
+                Hello, world!
+              </p>
+            );
+          }
+        });
+
+        React.render(<App />, document.body);
+    </script>
+</body>
+</html>
