@@ -12,7 +12,8 @@ app.get('/index', function(req, res) {
 	res.status(200).end('hi')
 })
 
-app.listen(port, localhost, function() {
-	console.log("listening on:" + localhost + ":" + port);
-});
+app.listen(80);
+// app.listen(port, localhost, function() {
+// 	console.log("listening on:" + localhost + ":" + port);
+// });
 

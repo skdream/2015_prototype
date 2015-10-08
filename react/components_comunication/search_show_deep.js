@@ -11,7 +11,7 @@ var SearchCmp = React.createClass({
 		return (
 			<div> 
 				<input id="txt1" />
-				<input type="button" onClick={this.handleClick} />
+				<input type="button" value="submit" onClick={this.handleClick} />
 			</div>
 		);
 	}
@@ -31,6 +31,9 @@ var ShowCmp = React.createClass({
 				searchValue: val
 			})
 		})
+	}, 
+	componentWillUnmount: function() {
+		evt.off('SEARCH'); 
 	}, 
 	render: function() {
 		return (
