@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>iphone6p btn active</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="http://3gimg.qq.com/HotVideo/Phone/Resource/Image/V1/shortcut_50.png"
+          type="image/x-icon">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no,address=no"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="x5-page-mode" content="no-title">
+    
+    <link rel="stylesheet" href="http://3gimg.qq.com/HotVideo/Phone/Resource/CSS/style_test.css"/>
+	</head>
+	<style>
+		.btn {
+			position: relative;
+			top: 100px;
+			width: 100px;
+		}
+
+		.btn:active {
+			opacity: 0.4;
+		}
+	</style>
+
+	<script>
+		window.onload = function() {
+			document.getElementById("abtn").addEventListener("click", function() {
+				alert(1);
+			})
+		}
+	</script>
+	<body>
+		<a class="btn" id="abtn" >hello_press</a>
+	</body>
+</html>

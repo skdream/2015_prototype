@@ -1,0 +1,39 @@
+<!-- cap css -->
+<link rel="stylesheet" href="../static/css/all_common.css" type="text/css" />
+<!-- cap template  -->
+<script id="cap_base_tpl" type="text/html">
+    <div class="mod-vote pk push">
+        <div class="cap-push-line"></div>
+        <div class="intro">
+            <span class="title">{{topicTitle}}</span>
+        </div>
+        <div class="pk-inner">
+            <div class="after-vote">
+                <ul class="list on">
+                    <li>
+                        <span class="result red">{{adText[0].percent}}</span>
+                        <span class="result blue fr">{{adText[1].percent}}</span>
+                        <div class="bar blue" style="width:100%"></div>
+                        <div class="bar red" style="width:{{adText[0].percent}}"></div>
+                        <p>
+                            <span class="result red">{{adText[0].text}}</span>
+                            <span class="result blue fr">{{adText[1].text}}</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="btn-group">
+            <a href="javascript:;" class="G-btn cap_open_qb" data-link="{{adBtn[0].link}}">{{adBtn[0].text}}</a>
+        </p>
+    </div>
+</script>
+<!-- cap main js -->
+<script src="../static/js/bundle.js"></script>
+<script type="text/javascript">
+    try {
+        window.CAP.run($ADSJSONDATAOBJ$);
+    } catch (e) {
+        window.CAP.run({});
+    }
+</script>

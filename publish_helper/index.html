@@ -1,0 +1,607 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="mqq-bottom-ad" content="no" />
+    <meta content="telephone=no" name="format-detection" />
+    <title>腾讯新闻</title>
+    <script type="text/javascript">
+        var preLoadTimestamp = (new Date()).getTime();//广告用
+    </script>
+    <link rel="dns-prefetch" href="//mat1.gtimg.com">
+    <link rel="dns-prefetch" href="//imgcache.gtimg.cn">
+    <link href="http://mat1.gtimg.com/www/cssn/newsapp/mqqNew/mqq_kuaibao_20150908a.css" rel="stylesheet" type="text/css">
+
+
+    <script type="text/javascript">
+        var QosSS=new Object();
+        QosSS.t=new Array([0,0,0,0,0,0,0,0,0,0,0]);
+        QosSS.t[0]=(new Date()).getTime();
+        QosSS.t[10]=QosSS.t[9]=QosSS.t[8]=QosSS.t[7]=QosSS.t[6]=QosSS.t[5]=QosSS.t[4]=QosSS.t[3]=QosSS.t[2]=QosSS.t[1]=QosSS.t[0];
+
+        var domainTestListPre = {"6":{}};
+
+        function getQuery(url, key) {
+            var reg = new RegExp("(^|&|\\?|#)" + key + "=([^&#]*)(&|$|#)", "");
+            var match = url.match(reg);
+            if (match) {
+                return match[2];
+            }
+            return "";
+        };
+
+        function getUserId(){
+            var url = document.location.href;
+            var uin = "";
+            uin = getQuery(url, "uin") != "" ? getQuery(url, "uin") : getCookie("uin");
+
+            if (uin && uin.indexOf("o") == 0) {
+                uin = parseInt(uin.substring(1, uin.length), 10) + "";
+            }
+
+            if(!uin){
+                uin = getQuery(url, "mmuin");
+            }
+            return uin;
+        };
+
+        function getCookie(name) {
+            var arr = document.cookie.match(new RegExp("(^| )" + name + "=([^;]*)(;|$)"));
+            if (arr != null) {
+                return unescape(arr[2]);
+            }
+            return null;
+        };
+
+        function isMatchSpeedStatsListPre(start, end){
+            var id = getUserId();
+            if(!id){
+                return false;
+            }
+
+            id = id.toString();
+            var len = id.length;
+            var key = id.substring(len - start, len - end);
+            var obj = domainTestListPre[key];
+
+            if(obj){
+                return true;
+            }else{
+                return false;
+            }
+        };
+
+        function submitSpeedStatsPre(key,value,sOp){
+            if(!isMatchSpeedStatsListPre(3,2)){
+                return;
+            }
+
+            var paramValue = [];
+            paramValue.push("sIp=");
+            var uin = getUserId();
+            paramValue.push("iQQ=" + uin);
+            paramValue.push("sBiz=appnews.front");
+            paramValue.push("sOp=" + sOp);
+            paramValue.push("iSta=0");
+            paramValue.push("iTy=2081");
+            paramValue.push("iFlow=");
+            paramValue.push("sServerIp=");
+            paramValue.push("iTimeUsed=" + value);
+            var img = new Image();
+            img.onload = function() {};
+            img.src = "http://btrace.qq.com/collect?" + paramValue.join('&');
+        };
+    </script>
+
+</head>
+<body>
+
+
+<div id="borderLogo"><div class="logoImg"></div></div>
+
+<div id="content" class="main">
+    <p class="title" align="left">大批游客“霸占”哥斯达黎加海滩 濒危海龟生蛋难(图)</p>
+    <span class="src">2015-09-16 腾讯新闻</span>
+
+
+    <p class="text"><div class="preLoad" style="width:100%; min-height:166px"><div class="img"><img src="http://inews.gtimg.com/newsapp_match/0/63992879/640" style="width:100%;display:block;" preview-src="http://inews.gtimg.com/newsapp_match/0/63992879/0"/></div><div class="tip">腾讯新闻</div></div><p class="picDesc">大批游客蜂拥海滩。</p></p><div class="atlas">
+    <div class="atlas_imgArea" style="width:100%; min-height:150px" data-atlasQnreading="1">
+        <img src="http://inews.gtimg.com/newsapp_ls/0/63993221_580360/0" alt="">
+        <span class="atlas_count">图集</span>
+    </div>
+    <a class="unified_downloader downloader_download" href=""  id="atlas_0" type="qnreading">
+        <div class="downloader_progress"></div>
+        <div class="downloader_text">查看更多图集</div>
+    </a>
+</div><p class="text">据外媒15日报道，成群的度假者蜂拥至哥斯达黎加一野生动物保护区，对太平洋海岸附近欲赴沙滩进行繁殖生产的濒危丽龟造成了威胁。</p><p class="text">当成百上千的海龟在海滩上聚集，在海边游泳的游客们常常会挡住它们的路，有些游客会去摸海龟，踩在他们的巢上面进行拍照，更有甚者会直接将孩子放在海龟上面，这对相当一部分的海龟的繁殖活动都造成了干扰。</p><p class="text">Ostional野生动物保护区成立于1982年，是世界上两处最重要的丽龟繁殖地之一，也是世界上唯一一处可以合法收集和买卖海龟蛋的地方。</p><p class="text">保护区管理员称，他从来没见过海滩上有这么多游客，而当地媒体报道称，一些旅客并不是通过正式途径进来的。现在哥斯达黎加的专家们已经对此地展开调查，看看有什么办法能够在将来有效控制旅客的数量，减少对于海龟繁殖活动的侵扰。</p><p class="text">虽然大量的海龟几乎每月都会来到海滩上，但是九月和十月是高峰期，很多旅游策划人员试图通过为旅客提供观看海龟下蛋的额外旅行来赚取更多的利润。</p><p class="text">公园巡逻员面对大量旅客的到来也是束手无策，在长达四英里的海滩上，当值的两位看守以及前来援助的三位警官根本无法控制人群。</p><p class="text">世界自然基金会称，成百上千的海龟基本上每月都会返回海滩一次，每次在岸上停留三至五天。由于此处允许当地人通过社区的合作机构收集海龟蛋，但这仅仅限于繁殖季前三天内第一波海龟生下的蛋。当地政府称，即使第一批海龟蛋不被拾走，也通常会被后来上岸的海龟或是海浪毁坏。除了第一批的海龟蛋外，剩下的海龟蛋则会在政府的监督之下被保护起来。</p><p class="text">哥斯达黎加政府称，这种允许买卖第一波海龟蛋的项目是由上世纪八十年代时科学家们发展起来的，这不仅有助于增长海龟的数量，而且通过售出海龟蛋所得收入也用在了雇佣沙滩巡逻员及支持相关的研究工作上。（独家稿件，不得转载。更多精彩内容，请关注腾讯新闻国际频道。）</p><div class="mobvideonews">
+    <div class="mobvideonews_imgArea" style="width:100%; min-height:150px;" data-mobvideoQnreading="0">
+        <img src="http://inews.gtimg.com/newsapp_ls/0/64020005_580360/0" alt="">
+        <div class="imgBg"></div>
+        <div class="playBtn"></div>
+        <div class="topDesc">
+            <p class="mobvideoTitle">实拍被困海龟获救后拥抱恩人</p>
+        </div>
+        <div class="bottomDesc">相关视频</div>
+    </div>
+    <a class="unified_downloader downloader_download" href=""  id="mobvideonews_0" type="news">
+        <div class="downloader_progress"></div>
+        <div class="downloader_text">查看更多视频文章</div>
+    </a>
+</div>
+</div>
+<!--qnreading begin-->
+<!--qnreading end-->
+<!--网友评论开始-->
+<div class="commentBox" style="display:none">
+    <p class="titleQnreading">精选评论</p>
+    <div class="commentScrollWrap">
+        <ul>
+            <li>
+                <div class="liWrap">
+                    <div class="avatar"><img src="http://t0.qlogo.cn/mbloghead/c70b67886733619be938/50"></div>
+                    <div class="nameBar">
+                                                <span>
+
+                        走进你的世界去爱你
+                        </span>
+                        <span class="time_need_reform" time="1442314000"></span>
+                    </div>
+
+                    <div class="contentBox">
+                        <p class="content">海龟辛辛苦苦生下的孩子 只有很少的一部分能够爬回大海中去 因为在爬向海里的过程中 绝大部分会被海鸟吃掉！哎！地球上没有一处净土了 不过还好是在外国 情况能好点吧 在中国的海滩上 后果不堪设想 不是喷我们自己人 素质在那里摆着呢</p>
+
+                        <a href="#" class="moreBtn" style="display: none;">展开</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <a id="comment_banner_new" type="qnreading" style="display:none;" href="qnreading://article_detail?nm=WXN201509160098340D&chlid=daily_timeline&type=1&from=mobileQQPush">
+            <p>打开天天快报，看<span class="comment_banner_new_num">14743</span>条热评</p>
+        </a>
+    </div>
+</div>
+<div class="commentDialog" style="display: none;">
+    <div class="innerbox">
+
+        <div class="commentTitle">腾讯新闻·网友评论<span class="close"></span></div>
+        <div id="commentScroller" class="pWrap">
+            <p class="movebox"></p>
+        </div>
+    </div>
+</div>
+<!--网友评论结束-->
+
+<!--新相关新闻开始-->
+<div class="relNews" style="display:none">
+    <p class="titleQnreading">相关新闻</p>
+    <ul class="ulRelNews">
+        <li class="singlePicLi" newsid="NEW2015090804195601" url="http://view.inews.qq.com/a/NEW2015090804195601">
+            <div class="singlePic"><img src="" url="http://inews.gtimg.com/newsapp_ls/0/61862516_640330/0"></div>
+            <div class="singlePicRight">
+                <p class="titleHot">动物园饲养员进笼和金丝猴一起进食</p>
+                <span class="relSrc time_need_reform" time="1441698363"></span><sapn class="relSrc">中国新闻网</span>
+            </div>
+        </li>
+        <li class="singlePicLi" newsid="TEC2015090300712804" url="http://view.inews.qq.com/a/TEC2015090300712804">
+            <div class="singlePic"><img src="" url="http://inews.gtimg.com/newsapp_ls/0/60695363_640330/0"></div>
+            <div class="singlePicRight">
+                <p class="titleHot">野生动物摄影大赛：来一起围观巨蜥厮杀</p>
+                <span class="relSrc time_need_reform" time="1441237213"></span><sapn class="relSrc">腾讯科学</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--新相关新闻结束-->
+
+<!--当前热点开始-->
+<div class="currentHots">
+    <div class="loading">
+        <p class="p1"><span class="bar1"></span><span class="bar7"></span></p>
+        <p class="p2"><span class="bar2"></span><span class="bar8"></span></p>
+        <p class="p3"><span class="bar3"></span><span class="bar9"></span></p>
+        <p class="p4"><span class="bar4"></span><span class="bar10"></span></p>
+        <p class="p5"><span class="bar5"></span><span class="bar11"></span></p>
+        <p class="p6"><span class="bar6"></span><span class="bar12"></span></p>
+    </div>
+</div>
+<!--当前热点结束-->
+<!-- 独立底部下载器开始 -->
+<div class="alone_bottom_downloader" style="display:none;">
+    <div class="relateVideo" data-mobvideoqnreading="0">
+        <div class="imgWrap">
+            <img src="http://inews.gtimg.com/newsapp_ls/0/63993919_640480/0"/>
+            <div class="playBtn"></div>
+        </div>
+        <p class="videoTitle">日本男子为400头牛重返无人区</p>
+    </div>
+    <a class="unified_downloader downloader_download" href=""  id="alone_bottom_downloader" type="news">
+        <div class="downloader_progress"></div>
+        <div class="downloader_text">下载腾讯新闻,看更多热点</div>
+    </a>
+</div>
+<!-- 独立底部下载器结束 -->
+<!--自选股下载begin-->
+<!--自选股下载end-->
+
+
+
+<div id="APP_QQ_Con_F_Pic"></div>
+
+<br>
+<br>
+
+<script language="javascript" type="text/javascript">
+    var closeHotNews = 0;
+    //应用宝下载器开关  Added at 20140825
+    var YYBOpen = '0';
+    var qnreadingOpen = '1';//快豹推广开关
+    var appFlag = '3';//页面app推广标识,1:qnreading；2:news；3:mixed
+    //视频渠道号
+    var videoChannel = "000116083139323433383539";
+    var newsChannel = "000116083139333437303037";
+    var qnreadingChannel = "";//后期需要替换为qnreading的渠道号
+    var stockChannel = "";
+    var kuaibaoName = "天天快报";
+    //应用宝灰度范围
+    // var YYBGray = '567';
+
+    // if(typeof getUserId == "function" && typeof YYBOpen == "string" && YYBOpen == '0'){
+    //     var qqId = getUserId();
+    //     if(qqId){
+    //         var len = qqId.length;
+    //         var key = qqId.substring(len - 3, len - 2);
+    //         if(typeof YYBGray == "string" && YYBGray.indexOf(key) != -1){
+    //             YYBOpen = '1';
+    //         }
+    //     }
+    // }
+
+    //内容模型
+    var contentModel = {
+        "img_url": "http://inews.gtimg.com/newsapp_match/0/63992879/0",
+        "img_width": "",
+        "img_height": "",
+        "link": "http://view.inews.qq.com/a/WXN201509160098340D",
+        "desc": '大批游客“霸占”海滩 濒危海龟生蛋难(图)',
+        "title": '大批游客“霸占”哥斯达黎加海滩 濒危海龟生蛋难(图)',
+        "src": '腾讯新闻'
+    };
+    var stockappInfo = {
+        "downloadUrlAndroid": "http://dldir1.qq.com/dlomg/istock/QQStock_weixinnews.apk?from=mqq",
+        "downloadUrlIphone": "http://itunes.apple.com/us/app/zi-xuan-gu/id485653572?mt=8&from=mqq",
+        "openUrlAndroid": "tencentstockapp282://?from=mqq",
+        "openUrlIphone": "qqstock://detailstock?from=mqq",
+        "stockappMd5": "",
+        "downloadText": "下载",
+        "downloadingText": "下载中",
+        "installText": "安装",
+        "openText": "打开",
+        "titleText": "自选股客户端"
+    };
+    //实验muin
+    var muinObj = {"allUser":1};
+    //精选评论内容
+    var commentWxData = {"ret":1,"comments":{"new":[],"hot":[]}};
+    //提示文字
+    var introText = "查看更多人类侵占动物&ldquo;领地&rdquo;视频";
+    var openText = "打开新闻客户端参与话题讨论";
+    //打开客户端链接
+    var openUrl;
+    openUrl = "qqnews://article_9527?nm=WXN201509160098340D&chlid=news_news_top&from=mobileQQPush&type=1&iscomment=1";
+
+    var commentCount = 14743;
+    var openUrlForBanner = "qnreading://article_detail?nm=WXN201509160098340D&chlid=daily_timeline&type=1&from=mobileQQPush";
+
+    var mobileType = "iphone";
+    var newsId = "WXN201509160098340D1";
+    //下载链接地址
+    var downloadUrl, downloadUrlClick;
+    downloadUrl = "http://view.inews.qq.com/appDownLoad/479?refer=biznew&src=mQQ&ostype=iphone&datastr1=WXN201509160098340D1";
+    downloadUrlClick = "";
+    //悬浮下载链接地址
+    var floatDownloadUrl = downloadUrl + "&dl=float";
+    var isPublic = (typeof publicAccount == 'object') ? true : false;
+
+    //是否拉起专题页面
+    // Added by nonysun at 2014/01/16.
+    var isTopicOpenUrl = false;
+    var listOpenUrl = "qqnews://article_9500?tab=news_news_top&channel=&from=mobileQQPush&type=1";
+    var articleOpenUrl = "qqnews://article_9527?nm=WXN201509160098340D&chlid=news_news_top&from=mobileQQPush&type=1&iscomment=1";
+
+    var ipadDownloadUrl = "";
+    var downloadMd5 = "";
+    var ipadOpenUrl = "";
+
+
+    // 腾讯视频推广用相关参数
+    var isShowVideo = false;
+    var openVideoTxt = "";
+    var downVideoTxt = "看更多视频新闻";
+    var downloadVideoUrl = "http://view.inews.qq.com/newsDownLoad?refer=biznew&src=txvideo_mqq&ostype=iphone&datastr1=WXN201509160098340D1";
+
+    var needVideoPool = {"user":[8,9]};
+
+    var newComment = {
+        "show":"1",//是否显示新打开,"1"为是,"0"为否
+        "data": [
+            {
+                "imgUrl":"http://t0.qlogo.cn/mbloghead/c70b67886733619be938/50",//用户头像URL
+                "nick":"走进你的世界去爱你",//用户昵称
+                "comment":"海龟辛辛苦苦生下的孩子 只有很少的一部分能够爬回大海中去 因为在爬向海里的过程中 绝大部分会被海鸟吃掉！哎！地球上没有一处净土了 不过还好是在外国 情况能好点吧 在中国的海滩上 后果不堪设想 不是喷我们自己人 素质在那里摆着呢",//评论内容
+                "uin":"ec70d7bc9da008a4bc49864e25508dd115",//用户id
+                "reply_id":"6049503380346846245",//回复id
+                "date":"2015-09-15 18:46",//时间
+                "head":"http://t0.qlogo.cn/mbloghead/c70b67886733619be938/50",//头像
+            },
+        ],
+        // 打开url
+        "openUrl":"qnreading://article_detail?nm=WXN201509160098340D&chlid=daily_timeline&type=1&from=mobileQQPush",//打开链接
+    }
+
+    //是否加载好友评论相关
+    var isShowFriendComment = true;
+
+    //是否显示下载气泡的评论
+    var showDownloadComment = false;
+
+    //是否强推视频
+    var enforceForVideo = false;
+
+    //视频封面图
+    var videoCoverImg = "";
+
+    //是否存在视频
+    var isHasVideo = false;
+
+    //配置qnreading下载链接
+    var downloadQRUrl;
+    downloadQRUrl = "http://view.inews.qq.com/appDownLoad/472?refer=biznew&src=kb_mQQ&ostype=iphone&datastr1=WXN201509160098340D1";
+
+    // 结构化模块信息
+    var moduleInfo = {
+        //图集for快报
+        "atlas_0":{
+            "type":"atlas",
+            "downloadUrl": downloadQRUrl,
+            "ipadDownloadUrl" : "",
+            "downloadMD5": "",
+            // 打开url
+            "openUrl":"qnreading://article_detail?nm=NEW2015091505582703&chlid=daily_timeline&from=mobileQQPush&type=1",//打开链接
+            "ipadOpenUrl":"",
+            "downloadText": "下载天天快报，看游客&ldquo;霸占&rdquo;海滩     ",
+            "openText": "打开天天快报，看游客&ldquo;霸占&rdquo;海滩     "
+        },
+        //正文专辑视频文章for新闻
+        "mobvideonews_0":{
+            "type":"mobvideonews",
+            "downloadUrl": downloadUrl,
+            "ipadDownloadUrl" : ipadDownloadUrl,
+            "downloadMD5": "",
+            "openUrl":"qqnews://article_9527?nm=NEW2015091601232003&chlid=mobileQQPush&from=mobileQQPush&type=1",//打开链接
+            "ipadOpenUrl":"qqnewshd://article_9527?nm=NEW2015091601232003&chlid=mobileQQPush&from=mobileQQPush&type=1",
+            "downloadText": "下载腾讯新闻，看更多精彩视频",
+            "openText": "打开腾讯新闻，看更多精彩视频"
+        },
+        // //正文专辑视频文章for快报
+        //     // "mobvideonews_0":{
+        //     "type":"mobvideonews",
+        //     "downloadUrl": downloadQRUrl,
+        //     "ipadDownloadUrl" : "",
+        //     "downloadMD5": "",
+        //     "openUrl":"qnreading://article_detail?nm=NEW2015091601232003&chlid=daily_timeline&from=mobileQQPush&type=1",//打开链接
+        //     "ipadOpenUrl":"",
+        //     "downloadText": "下载天天快报，看更多精彩视频",
+        //     "openText": "打开天天快报，看更多精彩视频"
+        // },
+        //
+        //网友评论
+        "comment_1":{
+            "type":"comment",
+            "downloadUrl": downloadUrl,
+            "ipadDownloadUrl" : ipadDownloadUrl,
+            "downloadMD5": "",
+            // 打开url
+            "openUrl":"qnreading://article_detail?nm=WXN201509160098340D&chlid=daily_timeline&type=1&from=mobileQQPush",//打开链接
+            "ipadOpenUrl": ipadOpenUrl,
+            "downloadText": "下载腾讯新闻",
+            "openText": "打开腾讯新闻",
+        },
+
+        //相关新闻
+        "relatedNews_1":{
+            "type":"relatedNews",
+            "downloadUrl": downloadUrl,
+            "ipadDownloadUrl" : ipadDownloadUrl,
+            "downloadMD5": "",
+            "openUrl":[
+                "qqnews://article_9527?nm=NEW2015090804195601&chlid=news_news_top&from=mobileQQPush&type=1",
+                "qqnews://article_9527?nm=TEC2015090300712804&chlid=news_news_top&from=mobileQQPush&type=1",
+            ],
+            "ipadOpenUrl":[
+                "qqnewshd://article_9527?nm=NEW2015090804195601&chlid=news_news_top&from=mobileQQPush&type=1",
+                "qqnewshd://article_9527?nm=TEC2015090300712804&chlid=news_news_top&from=mobileQQPush&type=1",
+            ],
+
+            "downloadText": "下载腾讯新闻,了解更多",
+            "openText": "打开腾讯新闻,了解更多",
+        },
+
+        // 视频推荐模块
+
+        //视频
+        "video":[{},{}],
+        //qnreading
+        //底部下载器
+        "alone_bottom_downloader":{
+            "type":"alone_bottom_downloader",
+            "downloadUrl": downloadUrl,//downloadQRUrl,
+            "ipadDownloadUrl" : ipadDownloadUrl,//"",
+            "downloadMD5": "",
+            "openUrl": "qqnews://article_9527?nm=NEW2015091504808600&chlid=mobileQQPush&from=mobileQQPush", //"qqnews://article_9500?from=mobileQQPush&type=1",//打开链接
+            "ipadOpenUrl": "qqnewshd://article_9527?nm=NEW2015091504808600&chlid=mobileQQPush&from=mobileQQPush", //"qqnewshd://article_9527?from=mobileQQPush&type=1",
+            "downloadText": "下载腾讯新闻，看更多热点视频", //"下载腾讯新闻，看更多热点",
+            "openText": "打开腾讯新闻，看更多热点视频" //"打开腾讯新闻，看更多热点"
+        }
+    }
+
+</script>
+<script type="text/javascript">
+    var currentHotUrl = "http://view.inews.qq.com/weixinHotNews";
+</script>
+<script src="http://pub.idqqimg.com/qqmobile/qqapi.js?_bid=152"></script>
+
+<script type="text/javascript">QosSS.t[1]= (new Date()).getTime();</script>
+<script language="javascript" src="http://mat1.gtimg.com/www/js/newsapp/mqqNew/mqq_20150825.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">QosSS.t[2]= (new Date()).getTime();</script>
+
+<script type="text/javascript">
+    // 添加统计参数
+    var otherdownload = document.getElementById("otherdownload");
+    if(otherdownload && openAppController.addBossParam) {
+        openAppController.addBossParam(otherdownload);
+    }
+</script>
+
+<script type="text/javascript">
+    var hasSubmitSpeedStats = false;
+    var domainTestList = {
+        "54":{"key":"imgcache","src":"http://imgcache.gtimg.cn"},
+        "44":{"key":"mat1","src":"http://mat1.gtimg.com"},
+        "34":{"key":"view","src":"http://view.inews.qq.com"},
+        "24":{"key":"shortwx","src":"http://short.weixin.qq.com"},
+    };
+
+    var domainTestUrl = "";
+    var domainTestKey = "";
+
+    function checkSubmitSpeedStats(){
+        if(isMatchSpeedStatsList()){
+            if(isHasVideo){
+                if((QosSS.t[6] - QosSS.t[0] != 0 && QosSS.t[8] - QosSS.t[0] != 0) && !hasSubmitSpeedStats){
+                    hasSubmitSpeedStats = true;
+                    submitSpeedStats();
+                }
+            }else{
+                if(QosSS.t[8] - QosSS.t[0] != 0 && !hasSubmitSpeedStats){
+                    hasSubmitSpeedStats = true;
+                    submitSpeedStats();
+                }
+            }
+        }
+    };
+
+    function submitSpeedStats(){
+        QosSS.c = new Image();
+        QosSS.c.onload = (QosSS.c.onerror = function() {delete QosSS.c;});
+
+        var param = [];
+        param.push('type=1');
+        param.push('name=mqqday_m6');
+        if(QosSS.t[2] - QosSS.t[1] != 0){
+            param.push('1=' + (QosSS.t[2] - QosSS.t[1]));
+        }
+        if(QosSS.t[4] - QosSS.t[3] != 0 && isHasVideo){
+            param.push('2=' + (QosSS.t[4] - QosSS.t[3]));
+        }
+        if(QosSS.t[6] - QosSS.t[5] != 0 && isHasVideo){
+            param.push('3=' + (QosSS.t[6] - QosSS.t[5]));
+        }
+        if(QosSS.t[8] - QosSS.t[7] != 0){
+            param.push(domainTestKey + '=' + (QosSS.t[8] - QosSS.t[7]));
+        }
+        QosSS.c.src = "http://qos.report.qq.com/collect?" + param.join('&');
+    };
+
+    function domainSpeedStats(){
+        var obj = isMatchSpeedStatsList();
+        if(!obj){
+            return;
+        }
+
+        domainTestUrl = obj.src;
+        domainTestKey = obj.key;
+
+        var domainTest= new Image();
+        domainTest.onload = (domainTest.onerror = function() {QosSS.t[8]= (new Date()).getTime();checkSubmitSpeedStats();});
+        QosSS.t[7]= (new Date()).getTime();
+        domainTest.src = domainTestUrl;
+    };
+
+    function isMatchSpeedStatsList(){
+        var id = getUserId();
+        if(!id){
+            return false;
+        }
+
+        id = id.toString();
+        var len = id.length;
+        var key = id.substring(len - 3, len - 1);
+        var obj = domainTestList[key];
+
+        if(obj){
+            return obj;
+        }else{
+            return false;
+        }
+    };
+    domainSpeedStats();
+    QosSS.t[10]=(new Date()).getTime();
+    submitSpeedStatsPre("2",QosSS.t[10] - QosSS.t[0],"mqqdaym6_load");
+</script>
+
+
+
+
+<script type="text/javascript">
+    function loadAd(){
+        var ua = window.navigator.userAgent.toLowerCase();
+        var MQQClient = ua.match(/qq\/(\d+\.(\d+)\.(\d+)\.(\d+))/i) || ua.match(/v1_and_sq_([\d\.]+)/);
+        if (MQQClient) {
+            initAdBlock();
+        }
+    };
+
+    function initAdBlock() {
+        Q.loadJs({
+            src: "http://mat1.gtimg.com/www/js/newsapp/mqq/ad/dia-mqq-min-20150907.js",
+            callback: function() {
+                var dia = new Dia();
+
+                dia.create({
+                    "hasad": true,
+                    "locid": "APP_QQ_Con_F_Pic",
+                    "contentid": newsId,
+                    "js_loadtime": preLoadTimestamp,
+                    "bgcolor": "#f3f3f3",
+                    "callback": function(data) {
+                        if (data && data.hasAd) {
+                            //上报广平广告输出
+                        } else {
+                            //初始化广点通广告
+                            initQQAdBlock();
+                        }
+                    }
+                });
+            },
+        });
+    }
+
+    function initQQAdBlock(){
+        Q.loadJs({
+            src: "http://qzonestyle.gtimg.cn/qzone/biz/gdt/display/positions/slots/newsinqq_20150827.js",
+            charset: 'utf-8',
+            callback: function() {
+                GDTMOD.newsinqq.load({
+                    container: "APP_QQ_Con_F_Pic",
+                    backgroundColor: "#f3f3f3",
+                });
+            },
+        });
+    }
+    loadAd();
+</script>
+<!--inline[./template/template.html]-->
+</body>
+</html>
