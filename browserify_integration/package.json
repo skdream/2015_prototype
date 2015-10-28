@@ -1,0 +1,12 @@
+{
+  "name": "browserify_integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+	  "build-js": "browserify modules/logic/business.js > output/a.js", 
+	  "watch-js": "watchify modules/logic/business.js -o output/a.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
